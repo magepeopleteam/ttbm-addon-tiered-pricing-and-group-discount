@@ -17,9 +17,9 @@
 					$checked = $display_tp == 'off' ? '' : 'checked';
 					$active = $display_tp == 'off' ? '' : 'mActive';
 					?>
-                    <div class="gptLayout">
+                    <section class="gptLayout">
                         <div class="alignCenter justifyBetween">
-                            <h5><?php esc_html_e('Tiered Pricing / Group Discount', 'ttbm-addon-tiered-pricing-and-group-discount'); ?></h5>
+                            <h5><span class="mi mi-shopping-cart-add _mR_xs"></span> <?php esc_html_e('Tiered Pricing / Group Discount', 'ttbm-addon-tiered-pricing-and-group-discount'); ?></h5>
 							<?php TTBM_Custom_Layout::switch_button('ttbm_display_tp', $checked); ?>
                         </div>
                         <div data-collapse="#ttbm_display_tp" class="<?php echo esc_attr($active); ?>">
@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 					<?php
 				}
 			}
